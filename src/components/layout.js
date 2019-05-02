@@ -12,6 +12,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import '../assets/css/layout.css'
 import '../assets/css/site.css'
+import Footer from './footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,6 +21,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            copyright
           }
         }
       }
@@ -36,22 +38,8 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            <p>Copyright Bugsy1440p {new Date().getFullYear()}</p>
-            <p>
-              Icons made by
-              <a
-                href='https://www.freepik.com/'
-                title='Freepik'
-                target='_blank'
-                className='link'
-                rel='noopener noreferrer'
-              >
-                Freepik
-              </a>
-            </p>
-          </footer>
         </div>
+        <Footer copyright={data.site.siteMetadata.copyright} />
       </>
     )}
   />

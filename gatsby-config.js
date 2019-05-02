@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Download More RAM`,
     description: `PC running slow? Need to give it a boost? Download more RAM from us for FREE!`,
-    author: `@bugsy1440p`
+    author: `@bugsy1440p`,
+    copyright: `Copyright Bugsy1440p`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
