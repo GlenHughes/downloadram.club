@@ -1,20 +1,28 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Bolt from '../components/Bolt'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Upgrades from "../components/upgrades/Upgrades"
 
-const IndexPage = () => (
+const IndexPage = data => (
   <Layout>
-    <SEO title='Home' keywords={[`download`, `ram`, `free`, `upgrade`, `PC`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Bolt />
+    <SEO title="Home" keywords={[`download`, `ram`, `free`, `upgrade`, `PC`]} />
+    <div
+      className="container"
+      style={{
+        textAlign: `center`,
+        margin: `5rem auto 0`,
+        width: `80%`,
+      }}
+    >
+      <h1>Download More RAM!</h1>
+      <p>
+        Computer running slow? Need a quick
+        <strong>FREE boost to performance</strong>? Choose an upgrade option
+        below to which sutis your needs.
+      </p>
+      <Upgrades />
     </div>
-    <Link to='/page-2/'>Go to page 2</Link>
   </Layout>
 )
 
