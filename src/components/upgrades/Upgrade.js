@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Chip from "../Chip"
 import Button from "../Button"
 
-const Upgrade = ({ title, size, description }) => (
+const Upgrade = ({ title, description }) => (
   <>
     <Chip alt={title} />
     <h3>{title}</h3>
@@ -15,13 +15,11 @@ const Upgrade = ({ title, size, description }) => (
 
 Upgrade.propTypes = {
   title: PropTypes.string,
-  size: PropTypes.string,
   description: PropTypes.string,
 }
 
 Upgrade.defaultProps = {
   title: ``,
-  size: ``,
   description: ``,
 }
 

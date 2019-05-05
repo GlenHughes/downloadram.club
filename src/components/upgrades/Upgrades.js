@@ -20,7 +20,7 @@ const Upgrades = () => {
       render={data => {
         return (
           <>
-            <ul className="flex-grid">{getUpgradeOptions(data)}</ul>
+            <ul className="flex-grid upgrades">{getUpgradeOptions(data)}</ul>
           </>
         )
       }}

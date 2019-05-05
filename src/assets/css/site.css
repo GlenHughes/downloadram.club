@@ -30,17 +30,11 @@
 }
 
 .upgrades {
+  margin: 0;
 }
 
 .upgrades li {
-}
-
-footer {
-  background: #33b5e6;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  list-style-type: none;
 }
 
 @keyframes spin {

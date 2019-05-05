@@ -6,17 +6,16 @@ const Footer = ({ copyright }) => {
     <footer
       style={{
         background: `#33b5e6`,
-        position: `absolute`,
-        bottom: 0,
         width: `100%`,
         textAlign: `center`,
-        color: `#ffffff`,
+        color: `#fff`,
+        padding: `1rem`,
       }}
     >
-      <p>
+      <p style={{ margin: `0` }}>
         {copyright} {new Date().getFullYear()}
       </p>
-      <p>
+      <p style={{ margin: `0` }}>
         Icons made by
         <a
           href="https://www.freepik.com/"

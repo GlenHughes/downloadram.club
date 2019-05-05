@@ -621,18 +621,25 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex-grow: 1;
 }
 .flex-grid {
   display: flex;
 }
 .col {
   flex: 1;
+  padding: 0.5rem;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
   .flex-grid {
     display: block;
   }
