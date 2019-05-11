@@ -17,9 +17,10 @@ const IndexPage = data => (
     >
       <h1>Download More RAM!</h1>
       <p>
-        Computer running slow? Need a quick
-        <strong>FREE boost to performance</strong>? Choose an upgrade option
-        below to which sutis your needs.
+        Computer running slow? Need a quick{" "}
+        <strong>FREE boost to your PC's performance</strong>? Choose from one of
+        the RAM upgrade options below to start your{" "}
+        <strong>RAM download</strong>!
       </p>
       <Upgrades />
     </div>

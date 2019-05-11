@@ -2,7 +2,7 @@
   "name": "downloadram.club",
   "private": true,
   "description": "Joke website made simply for FUN!",
-  "version": "0.1.0",
+  "version": "alpha.1.0.0",
   "author": "Glen Hughes <glen@glenhughes.me>",
   "dependencies": {
     "gatsby": "^2.3.34",
@@ -16,8 +16,11 @@
     "gatsby-transformer-sharp": "^2.1.18",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-animated-css": "^1.0.5",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-loading": "^2.0.3",
+    "react-progressbar": "^15.4.1"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

@@ -4,7 +4,7 @@ import icon from "../images/bolt.svg"
 
 const download = event => {
   const image = event.target
-  image.classList.toggle("spining")
+  image.classList.toggle("spinning")
 }
 
 const bolt = ({ altText }) => (

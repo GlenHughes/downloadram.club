@@ -643,4 +643,7 @@ pre tt:after {
   .flex-grid {
     display: block;
   }
+  .container {
+    width: 100% !important;
+  }
 }

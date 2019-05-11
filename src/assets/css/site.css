@@ -15,7 +15,7 @@
   border: solid #ffffff 13px;
   border-radius: 144px;
 }
-.bolt.spining {
+.spinning {
   animation: spin infinite 0.2s linear;
 }
 
@@ -33,8 +33,70 @@
   margin: 0;
 }
 
+.upgrades.selected {
+  display: block;
+}
+
 .upgrades li {
   list-style-type: none;
+}
+
+.upgrades.selected li {
+  display: none;
+}
+.upgrades.selected li.selected {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.upgrades li.selected {
+  background: #afe9ff;
+}
+
+.upgrades li img {
+  margin: 0;
+}
+
+.complete {
+  display: none;
+  padding: 2rem;
+}
+
+.button {
+  border: solid 7px #34b5e6;
+  background: #ffff;
+  padding: 0.3rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  background: #34b5e6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: none;
+}
+
+.loading-container > div {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.loading-container span {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  padding: 15px 0 25px;
+  border-bottom: 3px solid #000;
 }
 
 @keyframes spin {
@@ -43,5 +105,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .loading-container span {
+    font-size: 1rem;
   }
 }
