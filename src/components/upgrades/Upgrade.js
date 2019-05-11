@@ -105,8 +105,9 @@ const selectUpgrade = event => {
 }
 
 const tryAgain = () => {
-  //eslint-disable-next-line
-  location.reload()
+  if (typeof window !== undefined) {
+    window.location.reload()
+  }
 }
 
 const Upgrade = ({ title, description }) => (
