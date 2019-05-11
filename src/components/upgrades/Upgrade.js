@@ -4,7 +4,6 @@ import Progress from "react-progressbar"
 
 import Chip from "../Chip"
 import Button from "../Button"
-import { Animated } from "react-animated-css"
 import Loading from "../Loading"
 
 // @todo do this the React way with state
@@ -111,7 +110,7 @@ const tryAgain = () => {
 }
 
 const Upgrade = ({ title, description }) => (
-  <Animated animationIn="bounceInUp">
+  <div className="bounceInUp">
     <div className="loading-container">
       <Loading color="#fff" type="cylon" width="50px" height="100%" />
       <span />
@@ -137,7 +136,7 @@ const Upgrade = ({ title, description }) => (
     <p>{description}</p>
     <Button text="Choose Upgrade" onClick={selectUpgrade} />
     <Progress completed={currentProgress} />
-  </Animated>
+  </div>
 )
 
 Upgrade.propTypes = {
