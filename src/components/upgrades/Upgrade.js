@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Progress from "react-progressbar"
+import { Animated } from "react-animated-css"
 
 import Chip from "../Chip"
 import Button from "../Button"
@@ -110,7 +111,7 @@ const tryAgain = () => {
 }
 
 const Upgrade = ({ title, description }) => (
-  <div className="bounceInUp">
+  <Animated animationIn="bounceInUp">
     <div className="loading-container">
       <Loading color="#fff" type="cylon" width="50px" height="100%" />
       <span />
@@ -136,7 +137,7 @@ const Upgrade = ({ title, description }) => (
     <p>{description}</p>
     <Button text="Choose Upgrade" onClick={selectUpgrade} />
     <Progress completed={currentProgress} />
-  </div>
+  </Animated>
 )
 
 Upgrade.propTypes = {
