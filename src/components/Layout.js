@@ -8,12 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import ReactGA from "react-ga"
 
 import Header from "./Header"
 import "../assets/css/layout.css"
 import "../assets/css/site.css"
 import "../assets/css/lib/animated.css"
 import Footer from "./Footer"
+
+// - Google Analytics init
+ReactGA.initialize("UA-140036665-1")
+ReactGA.pageview("/home")
 
 const Layout = ({ children }) => (
   <StaticQuery
